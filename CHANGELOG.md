@@ -1,7 +1,10 @@
+## 0.1.2
+
+- Trim the README to what callers actually need; build-hook internals live in the hook.
+
 ## 0.1.1
 
-- State the bundled sqlite-vec version (v0.1.9) in the description and the README, and
-  document how the two version lines relate. No code change.
+- State the bundled sqlite-vec version (v0.1.9) in the description and the README.
 
 ## 0.1.0
 

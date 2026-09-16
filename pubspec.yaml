@@ -1,6 +1,6 @@
 name: sqlite3_vec
 description: "Vector search for SQLite, backed by sqlite-vec v0.1.9. Adds the vec0 virtual table and vec_*() functions to package:sqlite3, compiled from bundled C by a build hook."
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/ZhuJHua/sqlite3_vec
 repository: https://github.com/ZhuJHua/sqlite3_vec
 issue_tracker: https://github.com/ZhuJHua/sqlite3_vec/issues
