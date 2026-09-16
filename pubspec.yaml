@@ -1,5 +1,5 @@
 name: sqlite3_vec
-description: "Vector search for SQLite, backed by the sqlite-vec extension. Adds the `vec0` virtual table and the `vec_*()` functions to package:sqlite3. The native library is compiled from the bundled C by a Dart build hook."
+description: "Vector search for SQLite, backed by sqlite-vec. Adds the vec0 virtual table and vec_*() functions to package:sqlite3, compiled from bundled C by a build hook."
 version: 0.1.0
 homepage: https://github.com/ZhuJHua/sqlite3_vec
 repository: https://github.com/ZhuJHua/sqlite3_vec
