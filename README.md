@@ -1,9 +1,9 @@
 # sqlite3_vec
 
-Vector search for SQLite, backed by [sqlite-vec](https://github.com/asg017/sqlite-vec) and shipped
-as a native asset. It adds the `vec0` virtual table module and the `vec_*()` SQL functions to
-[`package:sqlite3`](https://pub.dev/packages/sqlite3) — no per-platform install, no Flutter
-dependency, no prebuilt binary to trust.
+Vector search for SQLite, backed by [sqlite-vec](https://github.com/asg017/sqlite-vec) **v0.1.9**
+and shipped as a native asset. It adds the `vec0` virtual table module and the `vec_*()` SQL
+functions to [`package:sqlite3`](https://pub.dev/packages/sqlite3) — no per-platform install, no
+Flutter dependency, no prebuilt binary to trust.
 
 ```sql
 CREATE VIRTUAL TABLE items USING vec0(embedding float[384] distance_metric=cosine);
@@ -95,6 +95,20 @@ That matters if you ever plan to *remove* this package from an app that already 
 the table in a release that still has the extension, not in the one that removes it. Otherwise the
 vectors are stranded in four shadow tables (`<name>_chunks`, `_info`, `_rowids`,
 `_vector_chunks00`) plus a schema row that ordinary SQL cannot reach.
+
+## Versioning
+
+This package's version and sqlite-vec's are independent. The bundled upstream version is stated
+here and in every [CHANGELOG](CHANGELOG.md) entry that changes it; at runtime, ask the extension
+itself:
+
+```dart
+db.select('SELECT vec_version() AS v').single['v']; // v0.1.9
+```
+
+| sqlite3_vec | sqlite-vec |
+|---|---|
+| 0.1.0 | v0.1.9 (`e9f598ab`, 2026-03-31) |
 
 ## How it works
 
