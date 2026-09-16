@@ -31,9 +31,7 @@ void main(List<String> args) async {
           // are still 4 KB aligned, which is why this is here.
           '-Wl,-z,max-page-size=16384',
         ],
-        // Plain comparisons, not a constant pattern: code_assets 2.0.0 gives
-        // OS a non-primitive `==`, which `case OS.iOS` will not compile against.
-        if (targetOS == OS.iOS || targetOS == OS.macOS) ...[
+        if (targetOS case OS.iOS || OS.macOS) ...[
           // clang would otherwise bake in the temporary directory that
           // native_toolchain_c compiles in, which hurts reproducibility.
           '-install_name',
