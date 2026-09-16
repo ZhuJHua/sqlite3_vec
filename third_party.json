@@ -1,0 +1,14 @@
+[
+  {
+    "packages": [
+      "sqlite-vec (C)"
+    ],
+    "text": "sqlite3_vec uses sqlite-vec under the MIT option of its dual Apache-2.0 / MIT license.\n\nMIT License\n\nCopyright (c) 2024 Alex Garcia\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  {
+    "packages": [
+      "SQLite headers"
+    ],
+    "text": "The SQLite amalgamation headers bundled here (sqlite3.h, sqlite3ext.h) are in the public domain.\n\nThe author disclaims copyright to this source code.  In place of\na legal notice, here is a blessing:\n\n    May you do good and not evil.\n    May you find forgiveness for yourself and forgive others.\n    May you share freely, never taking more than you give.\n"
+  }
+]

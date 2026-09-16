@@ -1,0 +1,33 @@
+name: sqlite3_vec
+description: "Vector search for SQLite, backed by the sqlite-vec extension. Adds the `vec0` virtual table and the `vec_*()` functions to package:sqlite3. The native library is compiled from the bundled C by a Dart build hook."
+version: 0.1.0
+homepage: https://github.com/ZhuJHua/sqlite3_vec
+repository: https://github.com/ZhuJHua/sqlite3_vec
+issue_tracker: https://github.com/ZhuJHua/sqlite3_vec/issues
+
+environment:
+  sdk: ^3.10.0
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  windows:
+
+topics:
+  - sqlite
+  - vector-search
+  - embeddings
+  - knn
+  - rag
+
+dependencies:
+  code_assets: ^1.2.1
+  hooks: ^2.2.0
+  native_toolchain_c: ^0.19.3
+  sqlite3: ^3.5.2
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.26.0
